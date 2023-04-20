@@ -5,9 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-            DoDiscovering the World with HTML Tables: A Country Data
-            Projectcument
+            Discovering the World with HTML Tables: A Country Data Projectcument
         </title>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th,
+            td {
+                border: 1px solid black;
+
+                text-align: center;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
     </head>
     <body>
         <h1>Country Data</h1>
@@ -125,7 +139,8 @@
                     <td>1,221,037 sq. km</td>
 
                     <td>
-                        Pretoria (executive), Bloemfontein (judicial),<br />
+                        Pretoria (executive),<br />
+                        Bloemfontein (judicial),<br />
                         Cape Town (legislative)n
                     </td>
                     <td>
@@ -138,8 +153,8 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="6">Total in USD:</td>
-                    <td colspan="1"></td>
+                    <td colspan="6" style="text-align: left">Total in USD:</td>
+                    <td colspan="1">$260,714,543</td>
                 </tr>
             </tfoot>
         </table>
