@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tables</title>
+        <style>
+            table {
+                width: 50%;
+                border-collapse: collapse;
+            }
+            td,
+            th {
+                border: 1px solid black;
+            }
+
+            th {
+                background-color: gainsboro;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Company Employees</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Department</th>
+                    <th>POsition</th>
+                    <th>Email</th>
+                    <th>Date of Hire</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ali Ramazon</td>
+                    <td>Engineering</td>
+                    <td>Sr Software Engineer</td>
+                    <td>ali@example.com</td>
+                    <td>March, 2019</td>
+                    <td>$450,000</td>
+                </tr>
+                <tr>
+                    <td>Will Smith</td>
+                    <td>Entertainment</td>
+                    <td>Actor</td>
+                    <td>will@example.com</td>
+                    <td>March, 1992</td>
+                    <td>$1,450,000</td>
+                </tr>
+                <tr>
+                    <td>Keven Lee</td>
+                    <td>HR</td>
+                    <td>Business Partner</td>
+                    <td>lee@example.com</td>
+                    <td>March, 2020</td>
+                    <td>$150,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total salary</td>
+                    <td colspan="1">2,050,000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
