@@ -22,21 +22,44 @@
             <label for="checkboxInput">Checkbox</label>
             <input type="checkbox" id="checkbox" name="checkbox" />
         </form>
-
+        <div>
+            <p>What is your gender</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" />
+        </div>
         <form>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" />
+
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt" />
+
+            <label for="meetingtime">Meeting (date and time):</label>
+            <input type="meeting-local" id="meetingtime" name="meetingtime" />
+
             <label for="submit-input">Submit</label>
             <input type="submit" id="submit-input" name="submit" />
 
+            <input type="reset" value="Reset form Data" />
+
+            <label for="myfile">Select a file</label>
+
+            <div><input type="file" id="myfile" name="myfile" /></div>
+        </form>
+        <form>
+            <label for="url-input">url</label>
+            <input type="url" id="url-input" name="url" />
+        </form>
+
+        <form>
             <label for="range-input">Range</label>
             <input type="range" id="range-input" name="range" />
-
+        </form>
+        <form>
             <label for="search-input">Search</label>
             <input type="search" id="search-input" name="search" />
-
-            <form>
-                <label for="url-input">url</label>
-                <input type="url" id="url-input" name="url" />
-            </form>
         </form>
     </body>
 </html>
