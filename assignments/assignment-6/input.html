@@ -54,7 +54,35 @@
 
             <label for="vol">Volume (between 0 and 50):</label>
             <input type="range" id="vol" name="vol" min="0" max="50" />
-            <label for="submit-input">Submit</label>
+
+            <label for="favcolor">Select your favorite color:</label>
+            <input
+                type="color"
+                id="favcolor"
+                name="favcolor"
+                value="#ff0000"
+            /><br /><br />
+
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch" /> <br />
+
+            <label for="phone">Enter your phone number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            />
+
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage" /><br /><br />
+
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth" />
+            <label for="submit-input">Submit</label> <br />
+
+            <label for="week-selector">Select a week:</label>
+            <input type="week" id="week-selector" name="week-selector" />
             <input type="submit" id="submit-input" name="submit" />
 
             <input type="reset" value="Reset form Data" />
