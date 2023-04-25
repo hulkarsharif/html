@@ -9,57 +9,62 @@
     <body>
         <h1>Customer feedback survey</h1>
         <label for="fullNameInput">Full Name</label>
-        <input type="text" id="FulNnameInput" name="Full name" /><br />
-
-        <label for="rating">Overall experience:</label><br />
-        <input type="radio" id="excellent" name="" value="excellent" required />
-        <label for="excellent">Excellent</label><br />
         <input
-            type="radio"
-            id="good"
-            name="fav_languages"
-            value="good"
+            type="text"
+            placeholder="Full name"
+            id="fullNnameInput"
+            name="fullName"
             required
-        />
-        <label for="good">Good</label><br />
-        <input
-            type="radio"
-            id="average"
-            name="fav_languages"
-            value="average"
-            required
-        />
-        <label for="average">Average</label><br />
-        <input
-            type="radio"
-            id="poor"
-            name="fav_languages"
-            value="poor"
-            required
-        />
-        <label for="poor">Poor</label><br />
-        <input
-            type="radio"
-            id="very-poor"
-            name="fav_languages"
-            value="very-poor"
-            required
-        />
-        <label for="very-poor">Very Poor</label> <br />
-
-        <label for="comments">Additional comments:</label>
-        <textarea id="comments" name="comments"></textarea><br />
-
-        <label for="phone">Enter your phone number:</label>
-        <input
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
         /><br />
 
+        <h2>Overall Experience</h2>
+
+        <input
+            type="radio"
+            id="excellent"
+            name="fav_languages"
+            value="excellent"
+        />
+        <label for="excellent">Excellent</label>
+        <br />
+
+        <input type="radio" id="good" name="fav_languages" value="good" />
+        <label for="good">Good</label><br />
+
+        <input type="radio" id="average" name="fav_languages" value="average" />
+        <label for="average">Average</label><br />
+
+        <input type="radio" id="poor" name="fav_languages" value="poor" />
+        <label for="poor">Poor</label><br />
+
+        <input
+            type="radio"
+            id="very poor"
+            name="fav_languages"
+            value="very poor"
+        /><label for="very poor">Very Poor</label><br />
+        <form>
+            <label for="comment">Additional comment:</label>
+            <textarea name="comment" id="comment" rows="4" cols="20"></textarea>
+        </form>
+        <br />
+        <div>
+            <label for="tellInput">Enter your phone number:</label>
+            <input
+                type="tell"
+                required
+                id="tellInput"
+                name="phoneNumber"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            />
+            <label for="emailInput">Enter your email:</label>
+            <input type="email" id="emailInput" name="email" />
+        </div>
+        <br />
+
         <label for="feedback">Other suggestions or feedback:</label>
-        <textarea id="feedback" name="feedback"></textarea><br />
+        <textarea name="feedback" id="feedbac" rows="5" cols="15"></textarea
+        ><br />
 
         <input type="submit" value="Submit" />
     </body>
