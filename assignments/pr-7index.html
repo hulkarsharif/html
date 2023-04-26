@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Signup</title>
+        <title>Assignment-7</title>
         <style>
             h1,
             h2 {
@@ -18,16 +18,28 @@
         <form>
             <div>
                 <label for="fullNameInput">Full Name</label>
-                <input type="text" id="Full name" name="fullNameInput" />
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    id="fullNnameInput"
+                    name="fullName"
+                    required
+                />
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
-                <label for="phone">Enter your phone number:</label>
+                <label for="emailInput">Email</label>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    id="emailInput"
+                    name="email"
+                />
+                <label for="phoneInput">Phone number:</label>
                 <input
                     type="tel"
-                    id="phone"
+                    id="phoneInput"
                     name="phone"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    autofocus
                 />
                 <label for="dobInput">Date of birth</label>
                 <input
@@ -68,27 +80,22 @@
                 <label for="passwordInput">Password</label>
                 <input
                     type="password"
-                    placeholder="password"
+                    placeholder="Password"
                     id="passwordInput"
                     name="password"
                     required
                 />
             </div>
-            <h2>Preferences:Favorite</h2>
+            <h2>Preferences</h2>
             <div>
-                <label for="favcolor">Select your favorite color:</label>
-                <input
-                    type="color"
-                    id="favcolor"
-                    name="favcolor"
-                    value="#ff0000"
-                />
+                <label for="colorInput">olor:</label>
+                <input type="color" id="colorInput" name="favoriteColor" " />
 
                 <label for="checkboxInput">Subscribe to newsletter</label>
-                <input type="checkbox" id="checkbox" name="checkboxInput" />
+                <input type="checkbox" id="checkboxInput" name="subscribe" />
 
-                <label for="preferred-language">Preferred Language:</label>
-                <select id="preferred-language" name="preferred-language">
+                <label for="languageSelect">Preferred Language:</label>
+                <select id="preferredLanguage" name="languageSelect">
                     <option value="english">English</option>
                     <option value="french">Russian</option>
                     <option value="german">Uzbek</option>
@@ -97,35 +104,41 @@
             </div>
             <h2>Attachements</h2>
             <div>
-                <label for="profileInput">Profile picture:</label>
-                <input type="file" id="profile" name="profileInput"
+                <label for="avatarInput">Profile picture</label>
+                <input type="file" id="avatarInput" name="picture"
             </div>
             <h2>Location</h2>
             <div>
-                <label for="website">Add your website:</label>
-                <input type="url" id="website" name="website" />
+                <label for="urlInput">Location</label>
+                <input type="url" id="urlInput" name="website" />
             </div>
             <h2>Feedback</h2>
 
             <div>
                 <label for="rangeInput">Satisfaction Rating</label>
-                <input type="range" id="range" name="rangeInput" />
+                <input
+                    type="range"
+                    id="rangeInput"
+                    name="satisfactionRange"
+                    min="1"
+                    max="10"
+                />
 
-                <label for="textarea">Comments</label>
+                <label for="commentsTextarea">Comments</label>
                 <textarea
-                    name="Comments"
-                    id="commentInput"
+                    name="comments"
+                    id="ccommentTextarea"
                     cols="20"
-                    rows="1"
+                    rows="2"
                 ></textarea>
             </div>
             <h2>Schedule</h2>
             <div>
-                <label for="appt">Preferred Meeting Time:</label>
-                <input type="time" id="appt" name="appt" />
+                <label for="timeInput">Preferred Meeting Time</label>
+                <input type="time" id="timeInput" name="preferedfTime" />
 
-                <label for="preferred-day">Preferred Meeting Day:</label>
-                <select id="preferred-day" name="preferred-day">
+                <label for="weekInput">Preferred Meeting Day</label>
+                <select id="weekInput" name="preferredDay">
                     <option value="Monday">Monday</option>
                     <option value="Tuesday">Tuesday</option>
                     <option value="Wednesday">Wednesday</option>
@@ -134,35 +147,24 @@
                     <option value="Saturday">Saturday</option>
                     <option value="Sunday">Sunday</option>
                 </select>
-
-                <label for="bdaymonth">Preferred Meeting month:</label>
-                <input type="month" id="bdaymonth" name="bdaymonth" />
+                <label for="monthInput">Preferref Meeting Month</label>
+                <input type="month" id="monthInput" name="preferredMonth" />
             </div>
 
             <h2>Seach</h2>
             <div>
-                <label for="search-input">Search</label>
-                <input type="search" id="search-input" name="search" />
+                <label for="searchInput"
+                    >Search for articles <a href="https://yahoo.com"></a
+                ></label>
+                <input type="search" id="searchInput" name="searchArticles" />
             </div>
 
-            <h2>Submit and Reset</h2>
+            <h2>Submit</h2>
             <div>
                 <input type="submit" value="Submit" />
                 <input type="reset" value="Reset" />
 
-                <button>
-                    Press the button <img src="./clickme.png" alt="click" />
-                </button>
-            </div>
-            <h2>Clickable Image</h2>
-            <div>
-                <input
-                    type="image"
-                    src="../../assignments/assignment-5/mountain.html"
-                    alt="Submit"
-                    width="48"
-                    height="48"
-                />
+                <button>Sign Up <img src="./clickme.png" alt="click" /></button>
             </div>
         </form>
     </body>
