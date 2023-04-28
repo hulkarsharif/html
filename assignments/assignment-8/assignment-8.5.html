@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.5</title>
+    </head>
+    <body>
+        <h2>Ticket application</h2>
+        <label for="fullNameInput">Full Name</label>
+        <input
+            type="text"
+            placeholder="Full Name"
+            id="fullNameInput"
+            name="fullName"
+            required
+        /><br />
+        <br />
+        <label for="emailInput">Email</label>
+        <input
+            type="email"
+            placeholder="Email"
+            id="emailInput"
+            name="email"
+        /><br /><br />
+
+        <h3>Select the priority level</h3>
+        <input
+            type="radio"
+            id="selectPriorityLevelInput"
+            name="Level"
+            value="priorityLevel"
+        />
+        <label for="selectPriorityLevelInput">Low</label><br />
+        <input
+            type="radio"
+            id="selectPriorityLevelInput"
+            name="Level"
+            value="priorityLevel"
+        />
+        <label for="selectPriorityLevelInput">Medium</label><br />
+        <input
+            type="radio"
+            id="selectPriorityLevelInput"
+            name="Level"
+            value="priorityLevel"
+        />
+        <label for="selectPriorityLevelInput">High</label><br /><br />
+
+        <label for="selectIssueCategoryInput">Select the issue category</label>
+        <select id="selectIssueCategoryInput" name="issueCategory">
+            <option value="TechnicalIssue">Technical Issue</option>
+            <option value="Biling">Billing</option>
+            <option value="AccountManagement">Account Management</option>
+            <option value="Other">Other</option></select
+        ><br /><br />
+
+        <label for="describeIssueTextarea">Describe the issue in details</label>
+        <textarea
+            name="decribeissue"
+            id="describeissueTextarea"
+            rows="4"
+            cols="45"
+        ></textarea
+        ><br /><br />
+
+        <label for="profileImage">Upload your image</label>
+        <input
+            type="file"
+            id="profileImage"
+            required
+            name="avatar"
+            accept="image"
+        /><br /><br />
+
+        <label for="infoTextarea">Additional information</label>
+        <textarea
+            name="additionalInformation"
+            id="infoTextarea"
+            rows="3"
+            cols="30"
+        ></textarea>
+
+        <input type="submit" value="Submit the support ticket" />
+    </body>
+</html>
