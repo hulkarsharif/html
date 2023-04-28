@@ -7,55 +7,57 @@
         <title>Assignment-8.7</title>
     </head>
     <body>
-        <h2>Photo contect application form</h2>
+        <form>
+            <h2>Photo contect application form</h2>
 
-        <label for="fullNameInput">Full Name</label>
-        <input
-            type="text"
-            placeholder="Full Name"
-            id="fullNameInput"
-            name="fullName"
-            required
-        />
-        <label for="emailInput">Email</label>
-        <input
-            type="email"
-            placeholder="Email"
-            id="emailInput"
-            name="email"
-        /><br /><br />
+            <label for="fullNameInput">Full Name</label>
+            <input
+                type="text"
+                placeholder="Full Name"
+                id="fullNameInput"
+                name="fullName"
+                required
+            />
+            <label for="emailInput">Email</label>
+            <input
+                type="email"
+                placeholder="Email"
+                id="emailInput"
+                name="email"
+            /><br /><br />
 
-        <label for="imageInput">Upload your photo</label>
-        <input
-            type="file"
-            required
-            id="imageInput"
-            name="image"
-            accept="image"
-        />
-        <label for="checkboxInput">I agree the terms of conditions</label>
-        <input type="checkbox" id="checkboxInput" name="agree" required />
+            <label for="imageInput">Upload your photo</label>
+            <input
+                type="file"
+                required
+                id="imageInput"
+                name="image"
+                accept="image"
+            />
+            <label for="checkboxInput">I agree the terms of conditions</label>
+            <input type="checkbox" id="checkboxInput" name="agree" required />
 
-        <br /><br />
+            <br /><br />
 
-        <label for="counrtySelect">Select the country</label>
-        <select id="counrtySelect" name="countrySelect">
-            <option value="United States">United States</option>
-            <option value="Canada">Canada</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="Australia">Australia</option></select
-        ><br /><br />
+            <label for="counrtySelect">Select the country</label>
+            <select id="counrtySelect" name="countrySelect">
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option></select
+            ><br /><br />
 
-        <label for="commentPhotoTextarea"
-            >Add brief decription or story of your photo
-        </label>
-        <textarea
-            name="comment"
-            id="commentPhotoTextarea"
-            rows="3"
-            cols="30"
-        ></textarea>
+            <label for="commentPhotoTextarea"
+                >Add brief decription or story of your photo
+            </label>
+            <textarea
+                name="comment"
+                id="commentPhotoTextarea"
+                rows="3"
+                cols="30"
+            ></textarea>
 
-        <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" />
+        </form>
     </body>
 </html>

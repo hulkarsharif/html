@@ -7,104 +7,106 @@
         <title>Assignment 8.1</title>
     </head>
     <body>
-        <h1>Register for Newsletter</h1>
-        <label for="userNameInput">User name</label>
-        <input
-            type="text"
-            placeholder="User Name"
-            id="userNameInput"
-            name="fullName"
-            required
-        />
+        <form>
+            <h1>Register for Newsletter</h1>
+            <label for="userNameInput">User name</label>
+            <input
+                type="text"
+                placeholder="User Name"
+                id="userNameInput"
+                name="fullName"
+                required
+            />
 
-        <label for="ageInput">Age</label>
-        <input
-            type="number"
-            id="ageInput"
-            name="age"
-            min="12"
-            max="65"
-            required
-        /><br /><br />
+            <label for="ageInput">Age</label>
+            <input
+                type="number"
+                id="ageInput"
+                name="age"
+                min="12"
+                max="65"
+                required
+            /><br /><br />
 
-        <label for="emailInput">Email</label>
-        <input
-            type="email"
-            placeholder="Email"
-            id="emailInput"
-            name="email"
-            required
-        />
-        <h2>Preferred Topics</h2>
-        <input
-            type="checkbox"
-            id="sportsCheckboxInput"
-            name="topic"
-            value="sports"
-        />
-        <label for="sportsCheckboxInput">Sports</label><br />
+            <label for="emailInput">Email</label>
+            <input
+                type="email"
+                placeholder="Email"
+                id="emailInput"
+                name="email"
+                required
+            />
+            <h2>Preferred Topics</h2>
+            <input
+                type="checkbox"
+                id="sportsCheckboxInput"
+                name="topic"
+                value="sports"
+            />
+            <label for="sportsCheckboxInput">Sports</label><br />
 
-        <input
-            type="checkbox"
-            id="technologyCheckboxInput"
-            name="topic"
-            value="technology"
-        />
-        <label for="technologyCheckboxInput">Technology</label><br />
+            <input
+                type="checkbox"
+                id="technologyCheckboxInput"
+                name="topic"
+                value="technology"
+            />
+            <label for="technologyCheckboxInput">Technology</label><br />
 
-        <input
-            type="checkbox"
-            id="travelCheckboxInput"
-            name="topic"
-            value="travel"
-        />
-        <label for="travelCheckboxInput">Travel</label><br />
+            <input
+                type="checkbox"
+                id="travelCheckboxInput"
+                name="topic"
+                value="travel"
+            />
+            <label for="travelCheckboxInput">Travel</label><br />
 
-        <h3>Select Frequency Newsletter</h3>
+            <h3>Select Frequency Newsletter</h3>
 
-        <input
-            type="radio"
-            id="dailyRadioInput"
-            name="newsletter"
-            value="daily"
-        />
-        <label for="dailyRadioInput">Daily</label><br />
+            <input
+                type="radio"
+                id="dailyRadioInput"
+                name="newsletter"
+                value="daily"
+            />
+            <label for="dailyRadioInput">Daily</label><br />
 
-        <input
-            type="radio"
-            id="weeklyRadioInput"
-            name="newsletter"
-            value="weekly"
-        />
-        <label for="weeklyRadioInput">Weekly</label><br />
+            <input
+                type="radio"
+                id="weeklyRadioInput"
+                name="newsletter"
+                value="weekly"
+            />
+            <label for="weeklyRadioInput">Weekly</label><br />
 
-        <input
-            type="radio"
-            id="monthlyRadioInput"
-            name="newsletter"
-            value="monthly"
-        />
-        <label for="monthlyRadioInput">Monthly</label><br />
-        <br />
+            <input
+                type="radio"
+                id="monthlyRadioInput"
+                name="newsletter"
+                value="monthly"
+            />
+            <label for="monthlyRadioInput">Monthly</label><br />
+            <br />
 
-        <label for="emailFormatSelect">Select preferred email format</label>
-        <select name="emailFormat" id="emailFormatSelect">
-            <option value="HTML">HTML</option>
-            <option value="Plain Text">Plain Text</option></select
-        ><br />
-        <br />
+            <label for="emailFormatSelect">Select preferred email format</label>
+            <select name="emailFormat" id="emailFormatSelect">
+                <option value="HTML">HTML</option>
+                <option value="Plain Text">Plain Text</option></select
+            ><br />
+            <br />
 
-        <div>
-            <label for="commentTextarea"
-                >Additional comments or sugesstions</label
-            >
-            <textarea
-                name="comment"
-                id="commentTextarea"
-                rows="4"
-                cols="30"
-            ></textarea>
-        </div>
-        <input type="submit" value="Submit" />
+            <div>
+                <label for="commentTextarea"
+                    >Additional comments or sugesstions</label
+                >
+                <textarea
+                    name="comment"
+                    id="commentTextarea"
+                    rows="4"
+                    cols="30"
+                ></textarea>
+            </div>
+            <input type="submit" value="Submit" />
+        </form>
     </body>
 </html>

@@ -7,81 +7,87 @@
         <title>Assignment-8.5</title>
     </head>
     <body>
-        <h2>Ticket application</h2>
-        <label for="fullNameInput">Full Name</label>
-        <input
-            type="text"
-            placeholder="Full Name"
-            id="fullNameInput"
-            name="fullName"
-            required
-        /><br />
-        <br />
-        <label for="emailInput">Email</label>
-        <input
-            type="email"
-            placeholder="Email"
-            id="emailInput"
-            name="email"
-        /><br /><br />
+        <form>
+            <h2>Ticket application</h2>
+            <label for="fullNameInput">Full Name</label>
+            <input
+                type="text"
+                placeholder="Full Name"
+                id="fullNameInput"
+                name="fullName"
+                required
+            /><br />
+            <br />
+            <label for="emailInput">Email</label>
+            <input
+                type="email"
+                placeholder="Email"
+                id="emailInput"
+                name="email"
+            /><br /><br />
 
-        <h3>Select the priority level</h3>
-        <input
-            type="radio"
-            id="selectPriorityLevel"
-            name="Level"
-            value="priorityLevel"
-        />
-        <label for="selectPriorityLevel">Low</label><br />
-        <input
-            type="radio"
-            id="selectPriorityLevel"
-            name="Level"
-            value="priorityLevel"
-        />
-        <label for="selectPriorityLevel">Medium</label><br />
-        <input
-            type="radio"
-            id="selectPriorityLevel"
-            name="Level"
-            value="priorityLevel"
-        />
-        <label for="selectPriorityLevel">High</label><br /><br />
+            <h3>Select the priority level</h3>
+            <input
+                type="radio"
+                id="selectPriorityLevel"
+                name="Level"
+                value="priorityLevel"
+            />
+            <label for="selectPriorityLevel">Low</label><br />
+            <input
+                type="radio"
+                id="selectPriorityLevel"
+                name="Level"
+                value="priorityLevel"
+            />
+            <label for="selectPriorityLevel">Medium</label><br />
+            <input
+                type="radio"
+                id="selectPriorityLevel"
+                name="Level"
+                value="priorityLevel"
+            />
+            <label for="selectPriorityLevel">High</label><br /><br />
 
-        <label for="selectIssueCategoryInput">Select the issue category</label>
-        <select id="selectIssueCategoryInput" name="issueCategory">
-            <option value="TechnicalIssue">Technical Issue</option>
-            <option value="Biling">Billing</option>
-            <option value="AccountManagement">Account Management</option>
-            <option value="Other">Other</option></select
-        ><br /><br />
+            <label for="selectIssueCategoryInput"
+                >Select the issue category</label
+            >
+            <select id="selectIssueCategoryInput" name="issueCategory">
+                <option value="TechnicalIssue">Technical Issue</option>
+                <option value="Biling">Billing</option>
+                <option value="AccountManagement">Account Management</option>
+                <option value="Other">Other</option></select
+            ><br /><br />
 
-        <label for="describeIssueTextarea">Describe the issue in details</label>
-        <textarea
-            name="decribeissue"
-            id="describeissueTextarea"
-            rows="4"
-            cols="45"
-        ></textarea
-        ><br /><br />
+            <label for="describeIssueTextarea"
+                >Describe the issue in details</label
+            >
+            <textarea
+                name="decribeissue"
+                id="describeissueTextarea"
+                rows="4"
+                cols="45"
+            ></textarea
+            ><br /><br />
 
-        <label for="profileImage">Upload your image</label>
-        <input
-            type="file"
-            id="profileImage"
-            required
-            name="avatar"
-            accept="image/file"
-        /><br /><br />
+            <label for="profileImage">Upload your image</label>
+            <input
+                type="file"
+                id="profileImage"
+                required
+                name="avatar"
+                accept="image/file"
+            /><br /><br />
 
-        <label for="additionalInfoTextarea">Additional information</label>
-        <textarea
-            name="additionalInformation"
-            id="additionalInfoTextarea"
-            rows="3"
-            cols="30"
-        ></textarea>
+            <label for="additionalInfoTextarea">Additional information</label>
+            <textarea
+                name="additionalInformation"
+                id="additionalInfoTextarea"
+                rows="3"
+                cols="30"
+            ></textarea>
 
-        <input type="submit" value="Submit the support ticket" />
+            <input type="submit" value="Submit the support ticket" />
+        </form>
     </body>
 </html>

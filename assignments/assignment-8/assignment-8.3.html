@@ -7,70 +7,74 @@
         <title>Assignment-8.3</title>
     </head>
     <body>
-        <h2>Job application form</h2>
-        <label for="fullNameInput">Full Name</label>
-        <input
-            type="text"
-            placeholder="Full Name"
-            id="fullNameInput"
-            name="fullName"
-            required
-        /><br />
-        <br />
-
-        <label for="phoneInput">Contact number:</label>
-        <input
-            type="tel"
-            id="phoneInput"
-            name="phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            autofocus
-        />
-
-        <label for="emailInput">Email</label>
-        <input
-            type="email"
-            placeholder="Email"
-            id="emailInput"
-            name="email"
-        /><br /><br />
-
         <form>
-            <label for="coverLetterTextarea">Write your cover letter:</label>
-            <textarea
-                name="coverLetter"
-                id="coverLetterTextarea"
-                rows="6"
-                cols="30"
-            ></textarea
+            <h2>Job application form</h2>
+            <label for="fullNameInput">Full Name</label>
+            <input
+                type="text"
+                placeholder="Full Name"
+                id="fullNameInput"
+                name="fullName"
+                required
+            /><br />
+            <br />
+
+            <label for="phoneInput">Contact number:</label>
+            <input
+                type="tel"
+                id="phoneInput"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                autofocus
+            />
+
+            <label for="emailInput">Email</label>
+            <input
+                type="email"
+                placeholder="Email"
+                id="emailInput"
+                name="email"
+            /><br /><br />
+
+            <form>
+                <label for="coverLetterTextarea"
+                    >Write your cover letter:</label
+                >
+                <textarea
+                    name="coverLetter"
+                    id="coverLetterTextarea"
+                    rows="6"
+                    cols="30"
+                ></textarea
+                ><br /><br />
+
+                <label for="fileInput">Upload your Resume</label>
+                <input
+                    type="file"
+                    id="fileInput"
+                    required
+                    name="resume"
+                    accept="resume/pdf"
+                />
+            </form>
+            <br />
+
+            <label for="educationLevelSelect">Education Level</label>
+            <select id="educationLevelSelect" name="educationLevel">
+                <option value="HighSchool">High School</option>
+                <option value="BachelorDegree">Bachelor's Degree</option>
+                <option value="MasterDegree">Master's Degree</option>
+                <option value="PH.D.">PH.D.</option></select
             ><br /><br />
 
-            <label for="fileInput">Upload your Resume</label>
-            <input
-                type="file"
-                id="fileInput"
-                required
-                name="resume"
-                accept="resume/pdf"
-            />
+            <label for="additionalInfoTextarea">Additional Info</label>
+            <textarea
+                name="additionalInfo"
+                id="additionalInfoTextarea"
+                cols="40"
+                rows="2"
+            ></textarea>
+            <input type="submit" value="Submit" />
         </form>
-        <br />
-
-        <label for="educationLevelSelect">Education Level</label>
-        <select id="educationLevelSelect" name="educationLevel">
-            <option value="HighSchool">High School</option>
-            <option value="BachelorDegree">Bachelor's Degree</option>
-            <option value="MasterDegree">Master's Degree</option>
-            <option value="PH.D.">PH.D.</option></select
-        ><br /><br />
-
-        <label for="additionalInfoTextarea">Additional Info</label>
-        <textarea
-            name="additionalInfo"
-            id="additionalInfoTextarea"
-            cols="40"
-            rows="2"
-        ></textarea>
-        <input type="submit" value="Submit" />
     </body>
 </html>

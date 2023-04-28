@@ -7,128 +7,130 @@
         <title>Assignment 8.2</title>
     </head>
     <body>
-        <h2>Quiz</h2>
+        <form>
+            <h2>Quiz</h2>
 
-        <label for="fullNameInput">Full Name</label>
-        <input
-            type="text"
-            placeholder="Full Name"
-            id="fullNameInput"
-            name="fullName"
-            required
-        /><br />
-        <br />
-        <label for="emailInput">Email</label>
-        <input
-            type="email"
-            placeholder="Email"
-            id="emailInput"
-            name="email"
-            required
-        />
+            <label for="fullNameInput">Full Name</label>
+            <input
+                type="text"
+                placeholder="Full Name"
+                id="fullNameInput"
+                name="fullName"
+                required
+            /><br />
+            <br />
+            <label for="emailInput">Email</label>
+            <input
+                type="email"
+                placeholder="Email"
+                id="emailInput"
+                name="email"
+                required
+            />
 
-        <h3>Confidence level of answering</h3>
+            <h3>Confidence level of answering</h3>
 
-        <label for="confidenceLevelInput">Level between 1 and 10</label>
-        <input
-            type="range"
-            id="confidenceLevelInput"
-            name="level"
-            min="1"
-            max="10"
-        />
+            <label for="confidenceLevelInput">Level between 1 and 10</label>
+            <input
+                type="range"
+                id="confidenceLevelInput"
+                name="level"
+                min="1"
+                max="10"
+            />
 
-        <label for="ageInput">Age</label>
-        <input
-            type="number"
-            id="ageInput"
-            name="age"
-            min="12"
-            max="65"
-            required
-        /><br /><br />
+            <label for="ageInput">Age</label>
+            <input
+                type="number"
+                id="ageInput"
+                name="age"
+                min="12"
+                max="65"
+                required
+            /><br /><br />
 
-        <h2>Preferred Topics</h2>
-        <input
-            type="checkbox"
-            id="preferredHistoryInput"
-            name="history"
-            value="history"
-        />
-        <label for="preferredHistoryInput">History</label><br />
+            <h2>Preferred Topics</h2>
+            <input
+                type="checkbox"
+                id="preferredHistoryInput"
+                name="history"
+                value="history"
+            />
+            <label for="preferredHistoryInput">History</label><br />
 
-        <input
-            type="checkbox"
-            id="preferredScienceInput"
-            name="science"
-            value="science"
-        />
-        <label for="preferredScienceInput">Science</label><br />
+            <input
+                type="checkbox"
+                id="preferredScienceInput"
+                name="science"
+                value="science"
+            />
+            <label for="preferredScienceInput">Science</label><br />
 
-        <input
-            type="checkbox"
-            id="preferredSportsInput"
-            name="sports"
-            value="sports"
-        />
-        <label for="preferredSportsInput">Sports</label><br />
+            <input
+                type="checkbox"
+                id="preferredSportsInput"
+                name="sports"
+                value="sports"
+            />
+            <label for="preferredSportsInput">Sports</label><br />
 
-        <input
-            type="checkbox"
-            id="preferredLiteratureInput"
-            name="literature"
-            value="literature"
-        />
-        <label for="preferredLiteratureInput">Literature</label><br />
+            <input
+                type="checkbox"
+                id="preferredLiteratureInput"
+                name="literature"
+                value="literature"
+            />
+            <label for="preferredLiteratureInput">Literature</label><br />
 
-        <h3>Preferred quiz format</h3>
+            <h3>Preferred quiz format</h3>
 
-        <input
-            type="radio"
-            id="prefferedQuizFormatInput"
-            name="quiz"
-            value="multipleChoice"
-        />
-        <label for="prefferedQuizFormatInput">Multiple Choice</label><br />
+            <input
+                type="radio"
+                id="prefferedQuizFormatInput"
+                name="quiz"
+                value="multipleChoice"
+            />
+            <label for="prefferedQuizFormatInput">Multiple Choice</label><br />
 
-        <input
-            type="radio"
-            id="prefferedQuizFormatInput"
-            name="quiz"
-            value="trueFalce"
-        />
-        <label for="prefferedQuizFormatInput">True/Falce</label><br />
+            <input
+                type="radio"
+                id="prefferedQuizFormatInput"
+                name="quiz"
+                value="trueFalce"
+            />
+            <label for="prefferedQuizFormatInput">True/Falce</label><br />
 
-        <input
-            type="radio"
-            id="prefferedQuizFormatInput"
-            name="quiz"
-            value="fillInTheBlank"
-        />
-        <label for="prefferedQuizFormatInput">Fill in the Blank</label
-        ><br /><br />
+            <input
+                type="radio"
+                id="prefferedQuizFormatInput"
+                name="quiz"
+                value="fillInTheBlank"
+            />
+            <label for="prefferedQuizFormatInput">Fill in the Blank</label
+            ><br /><br />
 
-        <label for="timeZoneSelect">Select the Time Zone</label>
-        <select id="timeZoneSelect" name="timeZone">
-            <option value="UTC-12">UTC-12</option>
-            <option value="UTC-11">UTC-11</option>
-            <option value="UTC+12">UTC+12</option>
-            <option value="UTC+13">UTC+13</option>
-            <option value="UTC+14">UTC+14</option>
-        </select>
+            <label for="timeZoneSelect">Select the Time Zone</label>
+            <select id="timeZoneSelect" name="timeZone">
+                <option value="UTC-12">UTC-12</option>
+                <option value="UTC-11">UTC-11</option>
+                <option value="UTC+12">UTC+12</option>
+                <option value="UTC+13">UTC+13</option>
+                <option value="UTC+14">UTC+14</option>
+            </select>
 
-        <div>
-            <label for="commentTextarea"
-                >Additional comments or sugesstions</label
-            >
-            <textarea
-                name="comment"
-                id="commentTextarea"
-                rows="4"
-                cols="30"
-            ></textarea>
+            <div>
+                <label for="commentTextarea"
+                    >Additional comments or sugesstions</label
+                >
+                <textarea
+                    name="comment"
+                    id="commentTextarea"
+                    rows="4"
+                    cols="30"
+                ></textarea>
 
-            <input type="submit" value="Submit" />
-        </div>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
     </body>
 </html>
