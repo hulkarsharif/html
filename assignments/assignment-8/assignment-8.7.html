@@ -9,22 +9,23 @@
     <body>
         <form>
             <h2>Photo contect application form</h2>
-
-            <label for="fullNameInput">Full Name</label>
-            <input
-                type="text"
-                placeholder="Full Name"
-                id="fullNameInput"
-                name="fullName"
-                required
-            />
-            <label for="emailInput">Email</label>
-            <input
-                type="email"
-                placeholder="Email"
-                id="emailInput"
-                name="email"
-            /><br /><br />
+            <div>
+                <label for="fullNameInput">Full Name</label>
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    id="fullNameInput"
+                    name="fullName"
+                    required
+                />
+                <label for="emailInput">Email</label>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    id="emailInput"
+                    name="email"
+                />
+            </div>
 
             <label for="imageInput">Upload your photo</label>
             <input
@@ -32,20 +33,22 @@
                 required
                 id="imageInput"
                 name="image"
-                accept="image"
+                accept="image/jpeg"
             />
-            <label for="checkboxInput">I agree the terms of conditions</label>
+            <label for="agreementCheckboxInput"
+                >I agree the terms and conditions</label
+            >
             <input
                 type="checkbox"
-                id="checkboxInput"
-                name="condition"
+                id="agreementCheckboxInput"
+                name="agreement"
                 required
             />
 
             <br /><br />
 
             <label for="counrtySelect">Select the country</label>
-            <select id="counrtySelect" name="countrySelect">
+            <select id="counrtySelect" name="country">
                 <option value="United States">United States</option>
                 <option value="Canada">Canada</option>
                 <option value="United Kingdom">United Kingdom</option>
