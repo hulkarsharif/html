@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-4 |Assignment-8</title>
+    </head>
+    <body>
+        <h1>Customer feedback survey</h1>
+        <label for="fullNameInput">Full Name</label>
+        <input
+            type="text"
+            placeholder="Full Name"
+            id="fullNameInput"
+            name="fullName"
+            required
+        /><br />
+
+        <h2>Overall Experience</h2>
+        <div>
+            <input type="radio" id="excellentRadioInput" name="experience
+            value="excellent" />
+            <label for="excellentRadioInput">Excellent</label>
+        </div>
+
+        <div>
+            <input
+                type="radio"
+                id="goodRadioInput"
+                name="experience"
+                value="good"
+            />
+            <label for="goodRadioInput">Good</label><br />
+        </div>
+
+        <div>
+            <input
+                type="radio"
+                id="averageRadioInput"
+                name="experience"
+                value="average"
+            />
+            <label for="averageRadioInput">Average</label><br />
+        </div>
+
+        <div>
+            <input
+                type="radio"
+                id="poorRadioInput"
+                name="experience"
+                value="poor"
+            />
+            <label for="poorRadioInput">Poor</label><br />
+        </div>
+
+        <div>
+            <input
+                type="radio"
+                id="veryPoorRadioInput"
+                name="experience"
+                value="verypoor"
+            /><label for="veryPoorRadioinput">Very Poor</label><br />
+        </div>
+
+        <form>
+            <label for="commentTextarea">Additional comment:</label>
+            <textarea
+                name="comment"
+                id="commentTextarea"
+                rows="4"
+                cols="20"
+            ></textarea>
+        </form>
+        <br />
+        <div>
+            <label for="telInput">Enter your phone number:</label>
+            <input
+                type="tel"
+                required
+                id="telInput"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+
+            <label for="emailInput">Enter your email</label>
+            <input type="email" id="emailInput" name="email" />
+        </div>
+        <br />
+
+        <div>
+            <label for="feedbackTextarea">Other suggestions or feedback</label>
+            <textarea name="feedback" id="feedbackTextarea" rows="5" cols="20">
+            </textarea>
+            <input type="submit" value="Submit" />
+        </div>
+    </body>
+</html>

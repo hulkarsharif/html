@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-7</title>
+        <style>
+            h1,
+            h2 {
+                text-align: left;
+                border-collapse: separate;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Personal Information</h1>
+        <form>
+            <div>
+                <label for="fullNameInput">Full Name</label>
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    id="fullNnameInput"
+                    name="fullName"
+                    required
+                />
+
+                <label for="emailInput">Email</label>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    id="emailInput"
+                    name="email"
+                />
+                <label for="phoneInput">Phone number:</label>
+                <input
+                    type="tel"
+                    id="phoneInput"
+                    name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    autofocus
+                />
+                <label for="dobInput">Date of birth</label>
+                <input
+                    type="date"
+                    id="dobInput"
+                    name="dob"
+                    max="2007-01-01"
+                    min="1983-01-01"
+                />
+
+                <label for="ageInput">Age</label>
+                <input
+                    type="number"
+                    id="ageInput"
+                    name="age"
+                    min="12"
+                    max="60"
+                />
+
+                <p>What is your gender</p>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" />
+            </div>
+            <h2>Account Details</h2>
+            <div>
+                <label for="userNameInput">User Name</label>
+                <input
+                    type="text"
+                    placeholder="User name"
+                    id="userNameInput"
+                    name="userName"
+                    required
+                    autofocus
+                />
+
+                <label for="passwordInput">Password</label>
+                <input
+                    type="password"
+                    placeholder="Password"
+                    id="passwordInput"
+                    name="password"
+                    required
+                />
+            </div>
+            <h2>Preferences</h2>
+            <div>
+                <label for="colorInput">Color:</label>
+                <input type="color" id="colorInput" name="favoriteColor" " />
+
+                <label for="checkboxInput">Subscribe to newsletter</label>
+                <input type="checkbox" id="checkboxInput" name="subscribe" />
+
+                <label for="languageSelect">Preferred Language:</label>
+                <select id="languageSelect" name="preferredLanguage">
+                    <option value="english">English</option>
+                    <option value="french">Russian</option>
+                    <option value="german">Uzbek</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <h2>Attachements</h2>
+            <div>
+                <label for="avatarInput">Profile picture</label>
+                <input type="file" id="avatarInput" name="picture"
+            </div>
+            <h2>Location</h2>
+            <div>
+                <label for="urlInput">Location</label>
+                <input type="url" id="urlInput" name="website" />
+            </div>
+            <h2>Feedback</h2>
+
+            <div>
+                <label for="rangeInput">Satisfaction Rating</label>
+                <input
+                    type="range"
+                    id="rangeInput"
+                    name="satisfactionRange"
+                    min="1"
+                    max="10"
+                />
+
+                <label for="commentsTextarea">Comments</label>
+                <textarea
+                    name="comments"
+                    id="ccommentTextarea"
+                    cols="20"
+                    rows="2"
+                ></textarea>
+            </div>
+            <h2>Schedule</h2>
+            <div>
+                <label for="timeInput">Preferred Meeting Time</label>
+                <input type="time" id="timeInput" name="preferedfTime" />
+
+                <label for="weekInput">Preferred Meeting Day</label>
+                <select id="weekInput" name="preferredWeekday">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+                <label for="monthInput">Preferref Meeting Month</label>
+                <input type="month" id="monthInput" name="preferredMonth" />
+            </div>
+
+            <h2>Seach</h2>
+            <div>
+                <label for="searchInput"
+                    >Search for articles <a href="https://yahoo.com"></a
+                ></label>
+                <input type="search" id="searchInput" name="searchedArticles" />
+            </div>
+
+            <h2>Submit</h2>
+            <div>
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+
+                <button>Sign Up <img src="./clickme.png" alt="click" /></button>
+            </div>
+        </form>
+    </body>
+</html>
