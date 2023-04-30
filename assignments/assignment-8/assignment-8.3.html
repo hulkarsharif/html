@@ -4,29 +4,28 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Assignment-8.3</title>
+        <title>Assignment 8.3</title>
     </head>
     <body>
         <form>
             <h2>Job application form</h2>
-            <label for="fullNameInput">Full Name</label>
-            <input
-                type="text"
-                placeholder="Full Name"
-                id="fullNameInput"
-                name="fullName"
-                required
-            /><br />
-            <br />
-
-            <label for="phoneInput">Contact number:</label>
-            <input
-                type="tel"
-                id="phoneInput"
-                name="phone"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                autofocus
-            />
+            <div>
+                <label for="fullNameInput">Full Name</label>
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    id="fullNameInput"
+                    name="fullName"
+                    required
+                /><label for="phoneInput">Contact number:</label>
+                <input
+                    type="tel"
+                    id="phoneInput"
+                    name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    autofocus
+                />
+            </div>
 
             <label for="emailInput">Email</label>
             <input
@@ -36,27 +35,24 @@
                 name="email"
             /><br /><br />
 
-            <form>
-                <label for="coverLetterTextarea"
-                    >Write your cover letter:</label
-                >
-                <textarea
-                    name="coverLetter"
-                    id="coverLetterTextarea"
-                    rows="6"
-                    cols="30"
-                ></textarea
-                ><br /><br />
+            <label for="coverLetterTextarea">Write your cover letter:</label>
+            <textarea
+                name="coverLetter"
+                id="coverLetterTextarea"
+                rows="6"
+                cols="30"
+            ></textarea
+            ><br />
 
-                <label for="resumeInput">Upload your Resume</label>
-                <input
-                    type="file"
-                    id="resumeInput"
-                    required
-                    name="resume"
-                    accept="resume/pdf"
-                />
-            </form>
+            <label for="resumeInput">Upload your Resume</label>
+            <input
+                type="file"
+                id="resumeInput"
+                required
+                name="resume"
+                accept="resume/pdf"
+            />
+
             <br />
 
             <label for="educationLevelSelect">Education Level</label>
@@ -65,7 +61,7 @@
                 <option value="Bachelor'sDegree">Bachelor's Degree</option>
                 <option value="Master'sDegree">Master's Degree</option>
                 <option value="PH.D.">PH.D.</option></select
-            ><br /><br />
+            ><br />
 
             <label for="additionalInfoTextarea">Additional Info</label>
             <textarea

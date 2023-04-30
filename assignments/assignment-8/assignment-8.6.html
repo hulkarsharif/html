@@ -27,26 +27,24 @@
             /><br /><br />
 
             <h3>Will you attend the event</h3>
-            <label for="attendEventInput">Yes</label>
-            <input type="radio" id="attendEventInput" name="attend" />
-            <label for="attendEventInput">No</label>
-            <input type="radio" id="attendEventInput" name="attend" />
+            <label for="yesRadioInput">Yes</label>
+            <input type="radio" id="yesRadioInput" name="attendanceStatus" />
+            <label for="noRadioInput">No</label>
+            <input type="radio" id="noRadioInput" name="attendanceStatus" />
 
             <h3>If yes, how many guests will you bring?</h3>
-            <label for="quantityInput"
+            <label for="guestNumberInput"
                 >Quanity of guests (between 1 and 20)</label
             >
             <input
                 type="number"
-                id="quantityInput"
+                id="guestNumberInput"
                 name="numberOfGuests"
                 min="1"
                 max="20"
             /><br /><br />
-            <label for="preferenceSelectMeal"
-                >Select your preference meal</label
-            >
-            <select id="preferenceSelectMeal" name="preferenceMeal">
+            <label for="preferredMealSelect">Select your preferred meal</label>
+            <select id="preferredMealSelect" name="preferredMeal">
                 <option value="Vegetarian">Vegetarian</option>
                 <option value="Non-Vegetarian">Non-Vegetarian</option>
                 <option value="Vegan">Vegan</option>
@@ -60,7 +58,7 @@
                 rows="3"
                 cols="30"
             ></textarea
-            ><input type="submit" value="Submit the  RSVP" />
+            ><input type="submit" value="Submit the  event RSVP" />
         </form>
     </body>
 </html>

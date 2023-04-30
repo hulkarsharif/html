@@ -8,25 +8,27 @@
     </head>
     <body>
         <form>
-            <h1>Register for Newsletter</h1>
-            <label for="userNameInput">User name</label>
-            <input
-                type="text"
-                placeholder="User Name"
-                id="userNameInput"
-                name="fullName"
-                required
-            />
+            <div>
+                <h1>Register for Newsletter</h1>
+                <label for="userNameInput">User name</label>
+                <input
+                    type="text"
+                    placeholder="User Name"
+                    id="userNameInput"
+                    name="userName"
+                    required
+                />
 
-            <label for="ageInput">Age</label>
-            <input
-                type="number"
-                id="ageInput"
-                name="age"
-                min="12"
-                max="65"
-                required
-            /><br /><br />
+                <label for="ageInput">Age</label>
+                <input
+                    type="number"
+                    id="ageInput"
+                    name="age"
+                    min="12"
+                    max="65"
+                    required
+                />
+            </div>
 
             <label for="emailInput">Email</label>
             <input
@@ -40,7 +42,7 @@
             <input
                 type="checkbox"
                 id="sportsCheckboxInput"
-                name="topic"
+                name="isSportsPreferredTopic"
                 value="Sports"
             />
             <label for="sportsCheckboxInput">Sports</label><br />
@@ -48,7 +50,7 @@
             <input
                 type="checkbox"
                 id="technologyCheckboxInput"
-                name="topic"
+                name="isTechnologyPreferredTopic"
                 value="Technology"
             />
             <label for="technologyCheckboxInput">Technology</label><br />
@@ -56,7 +58,7 @@
             <input
                 type="checkbox"
                 id="travelCheckboxInput"
-                name="topic"
+                name="isTravelPreferredTopic"
                 value="Travel"
             />
             <label for="travelCheckboxInput">Travel</label><br />
@@ -66,7 +68,7 @@
             <input
                 type="radio"
                 id="dailyRadioInput"
-                name="newsletter"
+                name="newsletterFrequency"
                 value="Daily"
             />
             <label for="dailyRadioInput">Daily</label><br />
@@ -74,7 +76,7 @@
             <input
                 type="radio"
                 id="weeklyRadioInput"
-                name="newsletter"
+                name="newsletterFrequency"
                 value="Weekly"
             />
             <label for="weeklyRadioInput">Weekly</label><br />
@@ -82,18 +84,19 @@
             <input
                 type="radio"
                 id="monthlyRadioInput"
-                name="newsletter"
+                name="newsletterFrequency"
                 value="Monthly"
             />
             <label for="monthlyRadioInput">Monthly</label><br />
             <br />
 
-            <label for="emailFormatSelect">Select preferred email format</label>
-            <select name="emailFormat" id="emailFormatSelect">
+            <label for="preferredEmailFormat"
+                >Select preferred email format</label
+            >
+            <select name="emailFormat" id="preferredEmailFormat">
                 <option value="HTML">HTML</option>
                 <option value="Plain Text">Plain Text</option></select
             ><br />
-            <br />
 
             <div>
                 <label for="commentTextarea"

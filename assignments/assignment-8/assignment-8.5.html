@@ -24,59 +24,59 @@
                 placeholder="Email"
                 id="emailInput"
                 name="email"
-            /><br /><br />
+            /><br />
 
-            <h3>Select the priority level</h3>
+            <h3>Select the priority issue</h3>
             <input
                 type="radio"
-                id="selectPriorityLevel"
-                name="Level"
+                id="ticketPrioritylowRadio"
+                name="ticketPriority"
                 value="Low"
             />
-            <label for="selectPriorityLevel">Low</label><br />
+            <label for="ticketPrioritylowRadio">Low</label><br />
             <input
                 type="radio"
-                id="selectPriorityLevel"
-                name="Level"
+                id="ticketPriorityMediumRadio"
+                name="ticketPriority"
                 value="Medium"
             />
-            <label for="selectPriorityLevel">Medium</label><br />
+            <label for="ticketPriorityMediumRadio">Medium</label><br />
             <input
                 type="radio"
-                id="selectPriorityLevel"
-                name="Level"
+                id="ticketPriorityHighRadio"
+                name="ticketPriority"
                 value="Hight"
             />
-            <label for="selectPriorityLevel">High</label><br /><br />
+            <label for="ticketPriorityHighRadio">High</label><br />
 
-            <label for="selectIssueCategoryInput"
-                >Select the issue category</label
-            >
-            <select id="selectIssueCategoryInput" name="issueCategory">
+            <label for="issueCategorySelect">Select the issue category</label>
+            <select id="issueCategorySelect" name="issueCategory">
                 <option value="TechnicalIssue">Technical Issue</option>
                 <option value="Biling">Billing</option>
                 <option value="AccountManagement">Account Management</option>
                 <option value="Other">Other</option></select
-            ><br /><br />
+            ><br />
 
-            <label for="describeIssueTextarea"
+            <label for="issueDetailTextarea"
                 >Describe the issue in details</label
             >
             <textarea
-                name="describeissue"
-                id="describeissueTextarea"
+                name="issueDetail"
+                id="issueDetailTextarea"
                 rows="4"
                 cols="45"
             ></textarea
             ><br /><br />
 
-            <label for="profileImage">Upload your image</label>
+            <label for="relevantScreenshotInput"
+                >Upload relevant screenshots</label
+            >
             <input
                 type="file"
-                id="profileImage"
+                id="relevantScreenshotInput"
                 required
-                name="avatar"
-                accept="image/file"
+                name="relevantScreenshot"
+                accept="image/*"
             /><br /><br />
 
             <label for="additionalInfoTextarea">Additional information</label>
