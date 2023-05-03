@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 8.7</title>
+    </head>
+    <body>
+        <form>
+            <h2>Photo contect application form</h2>
+            <div>
+                <label for="fullNameInput">Full Name</label>
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    id="fullNameInput"
+                    name="fullName"
+                    required
+                />
+                <label for="emailInput">Email</label>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    id="emailInput"
+                    name="email"
+                />
+            </div>
+
+            <label for="imageInput">Upload your photo</label>
+            <input
+                type="file"
+                required
+                id="imageInput"
+                name="personalPhoto"
+                accept="image/jpeg"
+            />
+            <label for="agreementCheckbox"
+                >I agree the terms and conditions</label
+            >
+            <input
+                type="checkbox"
+                id="agreementCheckbox"
+                name="agreement"
+                required
+            />
+
+            <br /><br />
+
+            <label for="counrtySelect">Select the country</label>
+            <select id="counrtySelect" name="country">
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option></select
+            ><br /><br />
+
+            <label for="photoDescriptionTextarea"
+                >Add brief decription or story of your photo
+            </label>
+            <textarea
+                name="photoDesription"
+                id="photoDescriptionTextarea"
+                rows="3"
+                cols="30"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

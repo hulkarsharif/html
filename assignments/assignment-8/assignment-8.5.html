@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.5</title>
+    </head>
+    <body>
+        <form>
+            <h2>Ticket application</h2>
+            <label for="fullNameInput">Full Name</label>
+            <input
+                type="text"
+                placeholder="Full Name"
+                id="fullNameInput"
+                name="fullName"
+                required
+            /><br />
+            <br />
+            <label for="emailInput">Email</label>
+            <input
+                type="email"
+                placeholder="Email"
+                id="emailInput"
+                name="email"
+            /><br />
+
+            <h3>Select the priority issue</h3>
+            <input
+                type="radio"
+                id="ticketPrioritylowRadio"
+                name="ticketPriority"
+                value="Low"
+            />
+            <label for="ticketPrioritylowRadio">Low</label><br />
+            <input
+                type="radio"
+                id="ticketPriorityMediumRadio"
+                name="ticketPriority"
+                value="Medium"
+            />
+            <label for="ticketPriorityMediumRadio">Medium</label><br />
+            <input
+                type="radio"
+                id="ticketPriorityHighRadio"
+                name="ticketPriority"
+                value="Hight"
+            />
+            <label for="ticketPriorityHighRadio">High</label><br />
+
+            <label for="issueCategorySelect">Select the issue category</label>
+            <select id="issueCategorySelect" name="issueCategory">
+                <option value="TechnicalIssue">Technical Issue</option>
+                <option value="Biling">Billing</option>
+                <option value="AccountManagement">Account Management</option>
+                <option value="Other">Other</option></select
+            ><br />
+
+            <label for="issueDetailTextarea"
+                >Describe the issue in details</label
+            >
+            <textarea
+                name="issueDetail"
+                id="issueDetailTextarea"
+                rows="4"
+                cols="45"
+            ></textarea
+            ><br /><br />
+
+            <label for="relevantScreenshotInput"
+                >Upload relevant screenshots</label
+            >
+            <input
+                type="file"
+                id="relevantScreenshotInput"
+                required
+                name="relevantScreenshot"
+                accept="image/*"
+            /><br /><br />
+
+            <label for="additionalInfoTextarea">Additional information</label>
+            <textarea
+                name="additionalInformation"
+                id="additionalInfoTextarea"
+                rows="3"
+                cols="30"
+            ></textarea>
+
+            <input type="submit" value="Submit the support ticket" />
+        </form>
+    </body>
+</html>
