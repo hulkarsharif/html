@@ -14,11 +14,3 @@ th {
 td {
     text-align: left;
 }
-td[colspan="7"] {
-    text-align: left;
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-td colspan="7" {
-    text-align: left>;
-}
